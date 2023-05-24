@@ -15,13 +15,12 @@ A brief description for the files in this repo:
 
 ## 2. Run
 
-### Generalization
+### Regression in *synthetic* data
 
-To see the improved generalization performance of the GRFF model on the synthetic data and the real-world benchmark data, run
+To see the  performance of *Learn2pFed* on the synthetic data, run
 ```
-sh train.sh
+sh demo.sh
 ```
-Comment or uncomment specific lines in `train.sh` to run the corresponding experiments.
 
 
 
