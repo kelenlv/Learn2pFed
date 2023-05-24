@@ -5,17 +5,13 @@ Codes for the paper `Learn What You Need in Personalized Federated Learning` sub
 
 ## Table of Content
   - [1. File descriptions](#1file-descriptions)
-  - [2. Train and attack](#2train-and-attack)
+  - [2. Train *Learn2pFed*](#2train)
 
 ## 1. File descriptions
 
 A brief description for the files in this repo:
 - `Layers.py` constructions of *Learn2pFed* network for regression in synthetic data and forecasting in ELD dataset
-- 
-- `modelv.py` definitions of the variant of the GRFF model for image data
-- `data_loader.py` scripts on loading the data
-- `train.sh` & `train.py` scripts on training the GRFF model on *synthetic* data and real-world *benchmark* data
-- `train_attack_mnist.sh` & `train_mnist.py` & `attack_mnist.py` scripts on training and attacking the GRFF variant on MNIST
+- `demo.sh` & `demo.py` scripts on training *Learn2pFed* on *synthetic* data and real-world data
 
 ## 2. Run
 
