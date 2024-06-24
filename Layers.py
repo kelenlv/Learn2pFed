@@ -121,6 +121,7 @@ class real_pFLNetLayer(nn.Module):
         x = self.pFL_net(x)
         return x
 
+## Initialization layer
 class VariableInitLayer(nn.Module):
     def __init__(self, fea, n_clients, tri_l, p):
         super(VariableInitLayer,self).__init__()
@@ -153,6 +154,7 @@ class VariableInitLayer(nn.Module):
         pFL_data['param_p'] = self.p
         return pFL_data
 
+## Personalized variable update layer
 class PersonalizedUpdateLayer(nn.Module):
     def __init__(self, rho, fea, n_clients, X, Y):
         super(PersonalizedUpdateLayer,self).__init__()
@@ -179,7 +181,7 @@ class PersonalizedUpdateLayer(nn.Module):
         return x
 
 
-
+## Auxiliary variable update layer
 class AuxiliaryUpdateLayer(nn.Module):
     def __init__(self, eta, tri_l, fea, n_clients):
         super(AuxiliaryUpdateLayer,self).__init__()
@@ -204,6 +206,7 @@ class AuxiliaryUpdateLayer(nn.Module):
         x['variable_z'] = z
         return x
 
+## Global variable update layer
 class GlobalUpdateLayer(nn.Module):
     def __init__(self, p, gamma, n_clients):
         super(GlobalUpdateLayer,self).__init__()
@@ -232,6 +235,7 @@ class GlobalUpdateLayer(nn.Module):
         x['variable_w'] = t1/t2
         return x
 
+## Multiplier variable update layer
 class MultipleUpdateLayer(nn.Module):
     def __init__(self, theta, n_clients):
         super(MultipleUpdateLayer,self).__init__()
