@@ -11,7 +11,7 @@ Codes for the paper `Learn What You Need in Personalized Federated Learning` sub
 
 A brief description for the files in this repo:
 - `Layers.py` constructions of *Learn2pFed* network for regression in synthetic data and forecasting in ELD dataset
-- `demo.sh` & `demo.py` scripts on training *Learn2pFed* on *synthetic* data and real-world data
+- `demo.sh` & `demo.py` scripts on training *Learn2pFed* on *synthetic* data and *real-world* data
 
 ## 2. Run
 
